@@ -1,0 +1,210 @@
+.container-fluid>a{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+.navbar-brand py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.container-fluid py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+/*---------actionBar-----------------*/
+.actionBar{
+    background-color: #3f3e3e;
+    width: 100%;
+    padding: 10px;
+    padding-left: 110px;
+}
+.actionBar span{
+    font-size: 13px;
+    color: azure;
+}
+.actionBar :nth-child(n+4){
+    color: rgb(50, 170, 221);
+}
+@media (max-width: 576px){
+    .actionBar :nth-child(-n+3){
+        font-size: 0px;
+    }
+    .actionBar :nth-child(6){
+        padding-left: 20px;
+    }
+}
+/*-------------NAVBAR DEFAULT SIZE---------------------*/
+.navbar navbar-expand-md navbar-light bg-light sticky-top py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.navbar-nav>li{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ul.navbar-nav li a:hover{
+    color: rgb(50, 170, 221) !important;
+    /* background-color: yellow; */
+}
+/*-------------INDIVIDUAL INTERNAL NAVBAR STYLE---------------------*/
+.navbar{
+    opacity: 0.9;
+}
+@media (max-width: 576px){
+    .navbar-brand>img{
+        display: none;
+    }
+    .navbar-brand>a :first-letter{
+
+    }
+}
+/*-----------------border between nav-items-------------*/
+.border-md-right {
+    border-right: 1px solid silver;
+}
+
+@media (max-width: 768px) {
+
+    .border-md-right {
+        border-right: none;
+    }
+    .actionBar{
+        padding-left: 10px;
+    }
+    .actionBar span{
+        font-size: 10px;
+    }
+
+}
+/*-----------------COLLAPSE-----------------------*/
+.navbar-toggler{
+    content: none;
+}
+.collapse{
+    margin-right: 50px;
+}
+/*-----------CAROUSEL----------*/
+.carousel-item img {width: 100%; height: auto}
+.carousel-inner{
+    width:100%;
+    max-height: 700px !important;
+}
+.carousel-caption{
+    background: rgba(247, 247, 247, 0.8);
+}
+.carousel-caption>h1{
+    color: #3f3e3e;
+}
+/*--------Zapoznaj sie z nasza oferta--------*/
+.tittle{
+    font-family: 'Tenor Sans';
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}/*
+    .tittle{
+        position: relative;
+    }
+    .borderBottom{
+        content: "";
+        position: absolute;
+        width: 50%;
+        background: #3f3e3e;
+        height: 1px;
+    }
+*/
+.border-bottom {
+    width: 80% !important; /* !important is necessary to insert changes in Bootstrap 4 by CSS*/
+    margin-left: auto;
+    margin-right: auto;
+}
+/*--------ServiceBox--------*/
+/*.row.row-container{
+    padding-top: 30px;
+}*/
+.octicon.octicon-check{
+    font-size: 38px;
+    padding-left: 22px;
+    color: rgb(50, 170, 221);
+}
+.box h3{
+    font-size: 16px;
+    font-family: 'Tenor Sans';
+}
+.box span{
+    font-size: 13px;
+    font-family: inherit;
+}
+@media (max-width: 768px){
+    .octicon.octicon-check{
+        font-size: 38px;
+        padding-top: 22px;
+    }
+}
+@media (max-width: 576px){
+    .octicon.octicon-check{
+        position: absolute; /*thanks for that .octicon-check set inline with .box*/
+        font-size: 38px;
+        margin-left: -10px;
+    }
+    .box{
+        margin-left: 70px;
+    }
+}
+/*-----------------CONTACT BAR-----------------------*/
+.contact-container{
+    width: 100%;
+    padding: 4% 4% 4% 4%;
+    margin: 4% 0% 4% 0%;
+    background-color: rgb(50, 170, 221);
+}
+.text-contact{
+    color: aliceblue;
+    font-size: 25px;
+}
+.button-contact{
+    font-style: none;
+    color: #3f3e3e;
+    background-color: aliceblue;
+    text-align: center;
+    /*padding: 12px 25px;*/
+    transition: all 0.5s;
+}
+@media (max-width: 768px){
+    .text-contact{
+        font-size: 18px;
+        text-align: center;
+    }
+    .button-contact{
+        padding: 12px 25px;
+    }
+}
+.button-contact:hover{
+    text-decoration: none;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 576px){ /*kolejnosc ulozenia kodu ma znaczenie ma znaczenie*/
+    .text-contact{
+        font-size: 14px;
+        text-align: center;
+    }
+    .button-contact{
+        padding: 9px 0;
+        font-size: 15px;
+    }
+    .button-contact:hover{
+        transform: none; 
+        box-shadow: none;
+    }
+}
+/*-----------------LOCALIZATION-----------------------*/
+.loc-cnt{
+    padding-top: 80px; 
+}
+.loc-cnt-contact{
+    font-size: 25px;
+}
+.loc-cnt-contact>span{
+    display: inline-block;
+    padding: 4px 0;
+}
